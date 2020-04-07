@@ -1,66 +1,129 @@
+<!DOCTYPE html>
 <html>
+
 <head>
+
+<title>
+First Program
+</title>
+
+<link href="file:///F:/BACKUP/html/number1.png" >
+
+<base target = "_blank">
+<style>
+p {color:white;}
+h1 {text-align:center;color:black;}
+h2 {color:black;}
+a {color:blue;}
+
+p.first {color:yellow;font-family:georgia;}
+
+</style>
+<meta name="Homer Baker" content="The first of many test programs.">
+
 </head>
 
 <body>
 
-$('#add').click(function () {
-    var table = $(this).closest('table');
-    console.log(table.find('input:text').length);
-    if (table.find('input:text').length < 7) {
-        var x = $(this).closest('tr').nextAll('tr');
-        $.each(x, function (i, val) {
-            val.remove();
-        });
-        table.append('<tr><td style="width:200px;" align="right">First Name <td> <input type="text" id="current Name" value="" /> </td><td style="width:200px;" align="right">Last Name <td> <input type="text" id="current Name" value="" /> </td></tr>');
-        $.each(x, function (i, val) {
-            table.append(val);
-        });
-    }
-});
-$('#del').click(function () {
-    var table = $(this).closest('table');
-    if (table.find('input:text').length > 1) {
-        table.find('input:text').last().closest('tr').remove();
-    }
-});
 
-<table border="0" cellspacing="2">
-           <tr><td style= "width:200px;" align="right">Name
-             <td>
-             <input type="text" id="current Name" value="" />
-            </td></td>
-           </tr>                    
-                    <tr>
-                        <td align="right">Test value</td>
-                        <td>
-                            <select id="test" style= "width:350px;">                            
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td align="right">datas</td>
-                        <td>
-               <input type="button" id="add" value="Add" onclick="AddTables();"/>                       
+<h1>
+Overall Header
+</h1>
 
-                        </td>
-                    </tr>
+<p style = "text-align:center;">
+<a href="http://www.facebook.com">
+This is a link to Facebook. </a>
+</p>
 
-                    <tr>
-                        <td style="height:3px" colspan="2"></td>
-                    </tr>
-                    <tr style="background-color: #383838">
-                        <td></td>
-                                            </tr>
-                    <tr>
+<hr>
 
-                    </tr>
-                    <tr>
 
-                        </div>
-                        </div>
-                        </td>
-                    </tr>
-                </table>
+
+<h2 style="color:white; background-color:black; margin-bottom:0;">
+Three Pokemon
+</h2>
+
+<div id="container" style="width:1280px;background-color:black;">
+
+<div id="tyranitar" style ="height = 400px; width:426px;float:left;background-color:black;">
+
+<p class="first">
+This is a picture of <b>Tyranitar</b>.<br>
+Tyranitar is a <i>rock</i> and <i>dark</i> type <a href="http://www.pokemon.com/us/" style="color:lightblue;">Pokemon</a>.<br>
+<a href="http://bulbapedia.bulbagarden.net/wiki/Tyranitar_(Pok%C3%A9mon)"><img src="tyranitar.gif" width="250" height="255"></a><br>
+Click on me to go to my Bulbapedia page!
+</p>
+</div>
+
+
+
+<div id="gyarados" style ="height = 400px; width:426px;float:left;background-color:black;">
+
+<p class="first">
+This is a picture of <b>Gyarados</b>.<br>
+Gyarados is a <i>water</i> and <i>flying</i> type Pokemon.<br>
+<a href="http://bulbapedia.bulbagarden.net/wiki/Gyarados_(Pok%C3%A9mon)"><img src="gyarados.png" width="329" height="255"></a><br>
+Click on me to go to my Bulbapedia page!
+</p>
+</div>
+
+
+
+<div id="Arcanine" style ="height = 400px; width:426px;float:left;background-color:black;">
+
+<p class="first">
+This is a picture of <b>Arcanine</b>.<br>
+Arcanine is a <i>fire</i> type Pokemon.<br>
+<a href="http://bulbapedia.bulbagarden.net/wiki/Arcanine"><img src="arcanine.gif"></a><br>
+Click on me to go to my Bulbapedia page!
+</p>
+</div>
+
+</div>
+
+
+
+<hr>
+
+<h2>Three Pokemon's Stats</h2>
+
+<table border="1">
+
+
+<tr>
+<th style="font-weight:bold;"></th>
+<th>Tyranitar</th>  <th>Gyarados</th>  <th>Arcanine</th>
+</tr>
+<tr>
+<th style="text-align:left;">HP</th>
+     <td>100</td>          <td>95</td>                <td>90</td>
+</tr>
+<tr>
+<th style="text-align:left;">Attack</th>
+      <td>134</td>         <td>125</td>               <td>110</td>
+</tr>
+<tr>
+<th style="text-align:left;">Defense</th>
+      <td>110</td>          <td>79</td>               <td>80</td>
+</tr>
+<tr>
+<th style="text-align:left";>Sp. Attack</th>
+      <td>95</td>           <td>60</td>               <td>100</td>
+</tr>
+<tr>
+<th style="text-align:left";>Sp. Defense</th>
+      <td>100</td>         <td>100</td>                <td>80</td>
+</tr>
+<tr>
+<th style="text-align:left";>Speed</th>
+      <td>61</td>          <td>81</td>                 <td>95</td>
+</tr>
+<tr>
+<th style="text-align:left";>Total</th>
+      <td>600</td>         <td>540</td>               <td>555</td>
+</tr>
+</table>
+
+
 </body>
 </html>
